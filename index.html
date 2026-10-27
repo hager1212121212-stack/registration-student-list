@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration List</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <h1>Student Registration</h1>
+
+    <div id="errorBox" class="error-message"></div>
+
+    <div class="container">
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="studentAge">Age</label>
+                <input type="number" id="studentAge" placeholder="Enter age">
+            </div>
+            <div class="form-group">
+                <label for="courseName">Course Name</label>
+                <input type="text" id="courseName" placeholder="Enter course name">
+            </div>
+            <div class="form-group">
+                <label for="studentGrade">Grade (0 - 100)</label>
+                <input type="number" id="studentGrade" placeholder="Enter grade">
+            </div>
+            <button type="submit">Add Student</button>
+        </form>
+    </div>
+
+    <div class="cards-grid" id="cardsGrid"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
